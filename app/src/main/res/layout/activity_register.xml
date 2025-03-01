@@ -7,20 +7,20 @@
     tools:context=".RegisterActivity">
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/Usuario011"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:hint="Correo Electrónico"
+        android:hint="Usuario"
         android:inputType="textEmailAddress"
         android:padding="10dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintWidth_percent="0.8"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/contra123"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:hint="Contraseña"
@@ -28,18 +28,18 @@
         android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@id/Usuario011"
         android:layout_marginTop="16dp"
         app:layout_constraintWidth_percent="0.8"/>
 
     <Button
-        android:id="@+id/buttonRegister"
+        android:id="@+id/registrar01"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:text="Registrar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@id/contra123"
         android:layout_marginTop="16dp"
         app:layout_constraintWidth_percent="0.5"/>
 

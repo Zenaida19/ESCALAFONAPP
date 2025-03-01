@@ -21,7 +21,7 @@
                 val Usuario = usuarioEditText.text.toString()
                 val password = passwordEditText.text.toString()
 
-                if (Usuario == "admin@example.com" && password == "123456") {
+                if (Usuario == "Zenaida" && password == "123456") {
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish() // Evita que el usuario regrese a la pantalla de login
