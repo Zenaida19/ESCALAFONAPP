@@ -9,6 +9,11 @@
     import androidx.appcompat.app.AppCompatActivity
 
     class LoginActivity : AppCompatActivity() {
+
+        // Definir usuario y contraseña fijos
+        private val usuarioCorrecto = "admin"
+        private val passwordCorrecto = "12345"
+
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_login)
@@ -21,12 +26,16 @@
                 val Usuario = usuarioEditText.text.toString()
                 val password = passwordEditText.text.toString()
 
-                if (Usuario == "Zenaida" && password == "123456") {
-                    val intent = Intent(this, MainActivity::class.java)
+                if (Usuario == usuarioCorrecto && password == passwordCorrecto) {
+
+                    // ✅ Inicio de sesión exitoso
+                    Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, MenuActivity::class.java)
                     startActivity(intent)
-                    finish() // Evita que el usuario regrese a la pantalla de login
+                    finish() // Cierra la pantalla de login
                 } else {
-                    Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
+                    // ❌ Usuario o contraseña incorrectos
+                    Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
                 }
             }
     }
