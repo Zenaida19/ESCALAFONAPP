@@ -7,27 +7,25 @@
     tools:context=".MenuActivity">
 
     <ImageView
-        android:id="@+id/iconDocentesFallecidos"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="108dp"
-        android:contentDescription="Docentes Fallecidos"
+        android:id="@+id/Fallecido"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/ic_fallecidos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:contentDescription="Icono de docentes fallecidos"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
-        android:id="@+id/iconDocentesPensionistas"
+        android:id="@+id/Pensionistas"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="Docentes Pensionistas"
         android:src="@drawable/ic_pensionistas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iconDocentesFallecidos" />
+        app:layout_constraintTop_toBottomOf="@id/Fallecido" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

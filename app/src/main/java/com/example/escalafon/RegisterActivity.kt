@@ -21,7 +21,7 @@ class RegisterActivity : AppCompatActivity() {
         val btnRegistrar = findViewById<Button>(R.id.registrar01)
 
         btnRegistrar.setOnClickListener {
-            Log.d("RegisterActivity", "Botón Registrar presionado") // 🔹 Verifica si el botón responde
+            Log.d("RegisterActivity", "Botón Registrar presionado")
 
             val email = editTextUsuario.text.toString()
             val password = editTextPassword.text.toString()
@@ -30,14 +30,14 @@ class RegisterActivity : AppCompatActivity() {
                 val registrado = databaseHelper.registrarUsuario(email, password)
                 if (registrado) {
                     Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show()
-                    Log.d("RegisterActivity", "Registro exitoso: $email") // ✅ Verificar en Logcat
+                    Log.d("RegisterActivity", "Registro exitoso: $email")
                 } else {
                     Toast.makeText(this, "Error al registrar usuario", Toast.LENGTH_SHORT).show()
-                    Log.e("RegisterActivity", "Error en el registro") // ⚠️ Verificar en Logcat
+                    Log.e("RegisterActivity", "Error en el registro")
                 }
             } else {
                 Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
-                Log.w("RegisterActivity", "Campos vacíos") // ⚠️ Verificar en Logcat
+                Log.w("RegisterActivity", "Campos vacíos")
             }
         }
     }

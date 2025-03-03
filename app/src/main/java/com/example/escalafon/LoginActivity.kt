@@ -10,7 +10,6 @@
 
     class LoginActivity : AppCompatActivity() {
 
-        // Definir usuario y contraseña fijos
         private val usuarioCorrecto = "admin"
         private val passwordCorrecto = "12345"
 

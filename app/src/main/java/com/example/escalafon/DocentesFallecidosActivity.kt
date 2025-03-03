@@ -1,3 +1,4 @@
+package com.example.escalafon
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -18,7 +19,6 @@ class DocentesFallecidosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_docentes_fallecidos)
 
-        // Inicializar vistas
         nombreEditText = findViewById(R.id.editNombre)
         nacimientoEditText = findViewById(R.id.editNacimiento)
         fallecimientoEditText = findViewById(R.id.editFallecimiento)
@@ -27,6 +27,5 @@ class DocentesFallecidosActivity : AppCompatActivity() {
         agregarButton = findViewById(R.id.buttonAgregar)
         listaDocentes = findViewById(R.id.listaDocentes)
 
-        // Aquí se agregaría la lógica para guardar y listar datos
     }
 }
