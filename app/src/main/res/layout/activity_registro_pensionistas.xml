@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
@@ -44,13 +43,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Fecha de Nacimiento"
-            android:inputType="date"/>
+            android:inputType="none"
+            android:focusable="false" />
+
+
+        <EditText
+            android:id="@+id/editEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:inputType="number"/>
 
         <EditText
             android:id="@+id/editLugar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Lugar"/>
+
+        <EditText
+            android:id="@+id/editProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Provincia"/>
+
+        <EditText
+            android:id="@+id/editDepartamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Departamento"/>
+
+        <EditText
+            android:id="@+id/Distrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distrito"/>
 
         <EditText
             android:id="@+id/editNacionalidad"
@@ -69,6 +95,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Educación (Primaria, Secundaria, Universidad)"/>
+
+        <EditText
+            android:id="@+id/editExperienciaLaboral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Experiencia Laboral"/>
 
         <EditText
             android:id="@+id/editDNI"
@@ -93,6 +125,20 @@
             android:text="Imprimir PDF"
             android:backgroundTint="@color/green"
             android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Lista de docentes registrados -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registros Guardados:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDocentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"/>
     </LinearLayout>
 </ScrollView>

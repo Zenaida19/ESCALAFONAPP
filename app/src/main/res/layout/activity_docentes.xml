@@ -11,14 +11,14 @@
     <!-- Logo o Encabezado -->
     <ImageView
         android:id="@+id/ivLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_huanuco"
+        android:layout_width="393dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="Logo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_huanuco"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Título -->
     <TextView
