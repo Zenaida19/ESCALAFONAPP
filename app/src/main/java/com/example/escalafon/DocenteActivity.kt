@@ -7,9 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 class DocenteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_docentes_fallecidos)
+        setContentView(R.layout.activity_docentes)
 
-        val textViewTitulo = findViewById<TextView>(R.id.textViewTitulo)
+        val textViewTitulo = findViewById<TextView>(R.id.tvTitulo)
+
 
         // Recibir el tipo de docente desde la pantalla anterior
         val tipo = intent.getStringExtra("tipo")

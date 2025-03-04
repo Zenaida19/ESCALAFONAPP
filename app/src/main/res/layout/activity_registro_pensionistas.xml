@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Docente Pensionista"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/editNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"/>
+
+        <EditText
+            android:id="@+id/editApellidoPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido Paterno"/>
+
+        <EditText
+            android:id="@+id/editApellidoMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido Materno"/>
+
+        <EditText
+            android:id="@+id/editFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento"
+            android:inputType="date"/>
+
+        <EditText
+            android:id="@+id/editLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lugar"/>
+
+        <EditText
+            android:id="@+id/editNacionalidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nacionalidad"/>
+
+        <EditText
+            android:id="@+id/editEstadoCivil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Estado Civil"/>
+
+        <EditText
+            android:id="@+id/editEducacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Educación (Primaria, Secundaria, Universidad)"/>
+
+        <EditText
+            android:id="@+id/editDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="@color/light_blue"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnImprimirPDF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imprimir PDF"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -4,5 +4,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_500">#6200EE</color>
     <color name="teal_700">#018786</color>
+    <color name="light_blue">#CFE8F5</color>
+    <color name="light_blu">#BFDDEE</color>
+    <color name="background_light_blue">#C6DAE7</color>
+    <color name="dark_blue">#003366</color>
+    <color name="button_blue">#3B78A9</color>
+    <color name="input_blue">#A9C5E8</color>
+    <color name="icon_gray">#757575</color>
+    <color name="button_yellow">#FBC02D</color>
+    <color name="button_green">#2E7D32</color>
+    <color name="green">#4CAF50</color>
+
 
 </resources>

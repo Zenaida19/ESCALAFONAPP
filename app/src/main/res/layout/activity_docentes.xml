@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DocenteActivity">
+
+    <!-- Logo o Encabezado -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_huanuco"
+        android:contentDescription="Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SISTEMA DE GESTIÓN PARA DOCENTES FALLECIDOS Y PENSIONISTAS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Icono y botón Fallecidos -->
+    <ImageView
+        android:id="@+id/ivFallecidos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_fallecidos"
+        android:contentDescription="Ícono Fallecidos"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnFallecidos"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="FALLECIDOS"
+        android:textStyle="bold"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivFallecidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Icono y botón Pensionistas -->
+    <ImageView
+        android:id="@+id/ivPensionistas"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_pensionistas"
+        android:contentDescription="Ícono Pensionistas"
+        app:layout_constraintTop_toBottomOf="@id/btnFallecidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnPensionistas"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="PENSIONISTAS"
+        android:textStyle="bold"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivPensionistas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botón para agregar más opciones (+) -->
+    <ImageView
+        android:id="@+id/btnAgregar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_agregar"
+        android:contentDescription="Agregar más"
+        android:background="@drawable/circle_background"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPensionistas"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

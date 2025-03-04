@@ -27,13 +27,11 @@
 
                 if (Usuario == usuarioCorrecto && password == passwordCorrecto) {
 
-                    // ✅ Inicio de sesión exitoso
                     Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, MenuActivity::class.java)
+                    val intent = Intent(this, DocentesActivity::class.java)
                     startActivity(intent)
-                    finish() // Cierra la pantalla de login
+                    //finish()
                 } else {
-                    // ❌ Usuario o contraseña incorrectos
                     Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
                 }
             }
