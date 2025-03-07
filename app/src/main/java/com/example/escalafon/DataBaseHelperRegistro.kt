@@ -55,8 +55,21 @@ class DataBaseHelperRegistro(context: Context) :
             put("dni", docente.dni)
         }
 
+
+
         val resultado = db.insert(TABLE_NAME, null, values)
         db.close()
+
+        if(resultado == -1L){
+            Log.e("DatabaseHelper", "Error al insertar los datos del docente")
+            return false
+
+        } else {
+            Log.d("DatabaseHelper", "Docente insertado con éxito. ID: $resultado")
+            return true
+            }
+
+        }
         return resultado != -1L
     }
 

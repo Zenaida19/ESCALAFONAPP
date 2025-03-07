@@ -25,7 +25,7 @@
             android:id="@+id/editNombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombres"/>
+            android:hint="Nombre"/>
 
         <EditText
             android:id="@+id/editApellidoPaterno"
@@ -40,6 +40,13 @@
             android:hint="Apellido Materno"/>
 
         <EditText
+            android:id="@+id/editDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI"
+            android:inputType="number"/>
+
+        <EditText
             android:id="@+id/editFechaNacimiento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,16 +54,23 @@
             android:inputType="date"/>
 
         <EditText
-            android:id="@+id/editLugar"
+            android:id="@+id/editFechaFallecimiento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Lugar"/>
+            android:hint="Fecha de Fallecimiento"
+            android:inputType="date"/>
 
         <EditText
             android:id="@+id/editNacionalidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nacionalidad"/>
+
+        <EditText
+            android:id="@+id/editDepartamentoProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Departamento y Provincia"/>
 
         <EditText
             android:id="@+id/editEstadoCivil"
@@ -71,17 +85,25 @@
             android:hint="Educación (Primaria, Secundaria, Universidad)"/>
 
         <EditText
-            android:id="@+id/editDNI"
+            android:id="@+id/editExperienciaLaboral"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="DNI"
-            android:inputType="number"/>
+            android:hint="Experiencia Laboral (lo más esencial)"/>
 
         <Button
             android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Guardar"
+            android:backgroundTint="@color/light_blue"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnGenerarPDF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generar PDF"
             android:backgroundTint="@color/light_blue"
             android:textColor="@color/white"
             android:layout_marginTop="16dp"/>

@@ -48,9 +48,9 @@ class RegistroPensionistasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_pensionistas)
 
-        dbHelper = DataBaseHelperRegistro(this) // Inicializar dbHelper
+        dbHelper = DataBaseHelperRegistro(this)
 
-        // Vincular el EditText del XML
+
         editFechaNacimiento = findViewById(R.id.editFechaNacimiento)
 
         editFechaNacimiento.setOnClickListener {
